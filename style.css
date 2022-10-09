@@ -10,7 +10,11 @@ background-color: whitesmoke;
 color: Black;
 font-family: Tahoma;
 text-align: center;
-
+height: 100vh;
+background-image: url(galeria/wallpaper\ absolut.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
   
 header {
@@ -27,12 +31,17 @@ h1 .img--carrito:hover{
  transform: scale(1.2);
  cursor:pointer;
 }
+
 h2 {
 margin-top: 1rem;
 padding-bottom: 2rem;
+color:white;
+}
+h2 span{
+    background-color: rgb(39, 25, 170);
 }
 .container--img-productos{
-background-color: rgb(39, 25, 170);
+
 padding: 2.5rem;
 }
 
@@ -67,6 +76,9 @@ background: steeblue;
 .img--05:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+main{
+    height: 82.5vh;
 }
 footer{
 padding-top: 2rem;

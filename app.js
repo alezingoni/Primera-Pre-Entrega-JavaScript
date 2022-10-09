@@ -8,6 +8,7 @@ function Product() {
 this.name ="";
 this.cantidad= 0;
 this.costo= 0;
+this.iva=0;
 this.precioVenta= 0;
 }
 
@@ -16,8 +17,11 @@ if (bienvenida == "si"){
     producto1.name = prompt("Selecciona el nombre del producto: ");
     producto1.cantidad = parseInt(prompt("Cantidad de unidades: "));
     producto1.costo = parseFloat(prompt("Costo: "));
+    producto1.iva = function(){
+        return this.costo * parseFloat(0.21);
+    }
     producto1.precioVenta = function(){
-        return this.cantidad * this.costo;
+        return (this.costo + this.iva()) * this.cantidad;
     }
    
 
@@ -26,9 +30,10 @@ if (bienvenida == "si"){
     console.log("Nombre: " + producto1.name);
     console.log("Cantidad: " + producto1.cantidad);
     console.log("Costo: " + producto1.costo);
-    console.log("Total de la venta: " + producto1.precioVenta());
+    console.log("Iva: $" +producto1.iva());
+    console.log("Total de la venta con iva incluido: " + producto1.precioVenta());
     
-    alert("Felicitaciones, su producto ha sido cargado satisfactoriamente!") //se carga el producto en la consola
+    alert("Felicitaciones, su producto ha sido cargado correctamenteale!") //se carga el producto en la consola
 } else if (bienvenida =="no") {
     alert("Gracias por visitar nuestra tienda!")
 } else{
