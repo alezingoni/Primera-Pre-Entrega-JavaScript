@@ -1,0 +1,77 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+padding: 2rem;
+background-color: whitesmoke;
+color: Black;
+font-family: Tahoma;
+text-align: center;
+
+}
+  
+header {
+padding: 1rem 0.5rem;
+margin-bottom: 1rem;
+color: white;
+background-color: rgb(39, 25, 170);
+}
+
+h1 .img--carrito{
+float: right;
+}
+h1 .img--carrito:hover{
+ transform: scale(1.2);
+ cursor:pointer;
+}
+h2 {
+margin-top: 1rem;
+padding-bottom: 2rem;
+}
+.container--img-productos{
+background-color: rgb(39, 25, 170);
+padding: 2.5rem;
+}
+
+.img--productos{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+flex-direction: row;
+background: steeblue;
+}
+.img--productos p{
+    text-align: center;
+    color: white;
+    background-color: rgb(23, 17, 117);
+}
+.img--01:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.img--02:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.img--03:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.img--04:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.img--05:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+footer{
+padding-top: 2rem;
+}
+footer p{
+background-color: rgb(39, 25, 170);
+color: white;
+}
